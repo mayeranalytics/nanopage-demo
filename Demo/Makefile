@@ -9,6 +9,7 @@ admin: bin/$(EXE)
 	$< -m ADMIN -C content
 
 Demo:
+	mkdir -p bin;\
 	cd ..;\
 	APPDIR=$$PWD/$@ stack --local-bin-path $@/bin/ install;\
 	strip Demo/bin/*

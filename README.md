@@ -13,7 +13,7 @@ First, download *nanoPage* from the repository on [github](https://github.com/ma
 
 ```bash
 cd some/good/location
-git clone git@github.com:mayeranalytics/nanopage-demo.git
+git clone --recursive git@github.com:mayeranalytics/nanopage-demo.git
 ```
 
 This will create a folder `nanopage-demo/`containing the demo app and the *nanoPage* source code in a git submodule.

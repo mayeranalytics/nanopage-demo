@@ -19,5 +19,6 @@ compress: bin/$(EXE)
 
 clean:
 	rm -f bin/*
+	cd ..; stack clean
 
 .PHONY: Demo clean run admin

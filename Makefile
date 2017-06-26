@@ -1,10 +1,10 @@
 all: Demo
 
-Demo: nanopage
+Demo: nanopage/src
 	make -C Demo
 
-nanopage:
-	git submodule add git@github.com:mayeranalytics/nanopage.git
+nanopage/src:
+	cd nanopage; git submodule update --init --recursive
 
 clean:
 	make -C Demo clean

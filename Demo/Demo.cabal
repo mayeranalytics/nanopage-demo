@@ -20,4 +20,5 @@ executable demo-app
   build-depends:       base
                      , nanopage
                      , blaze-html
+  other-modules:       Partials.MyTagList
   default-language:    Haskell2010

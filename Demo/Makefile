@@ -14,6 +14,9 @@ Demo:
 	APPDIR=$$PWD/$@ stack --local-bin-path $@/bin/ install;\
 	strip Demo/bin/*
 
+ghcid:
+	stack exec ghcid -- -c'stack ghci --main-is=demo-app'
+
 compress: bin/$(EXE)
 	upx -9 $<
 
